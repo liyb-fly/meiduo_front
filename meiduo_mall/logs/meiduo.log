@@ -1,0 +1,161 @@
+INFO 2020-01-14 09:52:43,040 basehttp 124 "GET / HTTP/1.1" 200 1716
+INFO 2020-01-14 09:57:26,334 basehttp 124 "GET / HTTP/1.1" 200 1716
+INFO 2020-01-14 10:26:24,067 basehttp 124 "GET / HTTP/1.1" 200 1716
+WARNING 2020-01-14 10:38:14,805 base 152 Not Found: /
+WARNING 2020-01-14 10:38:14,806 basehttp 124 "GET / HTTP/1.1" 404 2091
+ERROR 2020-01-14 10:38:20,635 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\meiduo_front\meiduo_mall\apps\users\views.py", line 10, in get
+    return render(request, 'register.html')
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\template\backends\jinja2.py", line 81, in render
+    return self.template.render(context)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\86136\Desktop\meiduo\meiduo_front\meiduo_mall\templates\register.html", line 23, in top-level template code
+    <a href="{{ url('users:login') }}">µÇÂ¼</a>
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2020-01-14 10:38:20,717 basehttp 124 "GET /register HTTP/1.1" 500 135311
+ERROR 2020-01-14 10:39:04,289 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\meiduo_front\meiduo_mall\apps\users\views.py", line 10, in get
+    return render(request, 'register.html')
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\template\backends\jinja2.py", line 81, in render
+    return self.template.render(context)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\86136\Desktop\meiduo\meiduo_front\meiduo_mall\templates\register.html", line 23, in top-level template code
+    <a href="{{ url('users:login') }}">µÇÂ¼</a>
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2020-01-14 10:39:04,569 basehttp 124 "GET /register HTTP/1.1" 500 135988
+ERROR 2020-01-14 10:39:46,668 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\meiduo_front\meiduo_mall\apps\users\views.py", line 10, in get
+    return render(request, 'register.html')
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\template\backends\jinja2.py", line 81, in render
+    return self.template.render(context)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\86136\Desktop\meiduo\meiduo_front\meiduo_mall\templates\register.html", line 23, in top-level template code
+    <!--<a href="{{ url('users:login') }}">µÇÂ¼</a>-->
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2020-01-14 10:39:46,761 basehttp 124 "GET /register HTTP/1.1" 500 136059
+ERROR 2020-01-14 10:40:03,516 exception 135 Internal Server Error: /register
+Traceback (most recent call last):
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\meiduo_front\meiduo_mall\apps\users\views.py", line 10, in get
+    return render(request, 'register.html')
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\template\backends\jinja2.py", line 81, in render
+    return self.template.render(context)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\86136\Desktop\meiduo\meiduo_front\meiduo_mall\templates\register.html", line 23, in top-level template code
+    <!--<a href="{{ url('users:login') }}">µÇÂ¼</a>-->
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\86136\Desktop\meiduo\venv\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2020-01-14 10:40:03,718 basehttp 124 "GET /register HTTP/1.1" 500 136059
+INFO 2020-01-14 10:40:32,196 basehttp 124 "GET /register HTTP/1.1" 200 3923
+INFO 2020-01-14 10:40:32,236 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 200 638
+INFO 2020-01-14 10:40:32,251 basehttp 124 "GET /static/css/main.css HTTP/1.1" 200 39723
+INFO 2020-01-14 10:40:32,264 basehttp 124 "GET /static/js/host.js HTTP/1.1" 200 80
+INFO 2020-01-14 10:40:32,264 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 200 12941
+INFO 2020-01-14 10:40:32,266 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 200 289307
+INFO 2020-01-14 10:40:32,270 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 200 7450
+INFO 2020-01-14 10:40:32,312 basehttp 124 "GET /static/js/common.js HTTP/1.1" 200 891
+INFO 2020-01-14 10:40:32,314 basehttp 124 "GET /static/js/register.js HTTP/1.1" 200 8627
+INFO 2020-01-14 10:40:32,402 basehttp 124 "GET /static/images/interval_line.png HTTP/1.1" 200 1123
+INFO 2020-01-14 10:40:32,425 basehttp 124 "GET /static/images/register_banner.png HTTP/1.1" 200 54894
+INFO 2020-01-14 10:40:32,433 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 200 3935
