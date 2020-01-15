@@ -186,3 +186,8 @@ LOGGING = {
         },
     }
 }
+
+
+# 指定 本项目用户模型类
+AUTH_USER_MODEL = 'users.User'
+
