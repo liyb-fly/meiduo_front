@@ -71,9 +71,10 @@ var vm = new Vue({
         //    3.发送请求
         //    4.请求成功的业务逻辑
         //     var url = '/usernames/'+ this.username +'/count/'
-            var url = 'http://www.meiduo.site:8000/usernames/'+ this.username +'/count/'
+            var url = 'http://127.0.0.1:8000/usernames/'+ this.username +'/count/';
             axios.get(url).then(response => {
-                   alert('ok')
+                   // alert('ok')
+                console.log(response);
                     if (response.data.count==1){
                     //   重复了
                         this.error_name=true

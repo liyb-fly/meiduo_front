@@ -1,6 +1,6 @@
 import re
 
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.urls import reverse
 
 from apps.users.models import User
@@ -56,7 +56,14 @@ class RegisterView(View):
         # return redirect(reverse("contents:index"))
         return HttpResponse("注册成功")
 
+class UsernameCountView(View):
 
+    def get(self, request, username):
+        count = User.objects.filter(username=username).count()
+
+        # 返回相应
+        return JsonResponse({"count": count})
+        pass
 
 
 
